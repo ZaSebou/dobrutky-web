@@ -2,15 +2,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-brown: #5a3219;
-  --color-brand-brown-light: #8b5a3e;
-  --color-brand-teal: #14b8a6;
+  --color-brand-brown: #6b3f22;
+  --color-brand-brown-light: #8c5535;
+  --color-brand-teal: #0d9488;
+  --color-brand-teal-dark: #0f7a6e;
   --color-brand-teal-light: #5eead4;
-  --color-brand-bg: #f8fafc;
+  --color-brand-bg: #faf9f7;
   --color-brand-surface: #ffffff;
-  --color-brand-text: #334155;
-  --color-brand-text-muted: #64748b;
+  --color-brand-text: #1e1a16;
+  --color-brand-text-muted: #6b6459;
+  --color-brand-cream: #fdf6ec;
   --font-sans: 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -22,17 +28,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Utilities */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.nav-glass {
+  background: rgba(250, 249, 247, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(107, 63, 34, 0.08);
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.06);
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, var(--color-brand-brown), var(--color-brand-brown-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at center, var(--tw-gradient-from), var(--tw-gradient-to));
 }
